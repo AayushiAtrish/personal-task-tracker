@@ -93,7 +93,7 @@ Include screenshots here if available
 📦 Submission Details
 GitHub Repo: https://github.com/AayushiAtrish/personal-task-tracker.git
 
-Live Demo: [https://your-deployed-link.vercel.app](https://personal-task-tracker1.netlify.app/)
+Live Demo: [https://personal-task-tracker1.netlify.app/](https://personal-task-tracker1.netlify.app/)
 
 🙋‍♀️ Author
 Aayushi Atrish
