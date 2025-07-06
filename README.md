@@ -91,9 +91,9 @@ LocalStorage (data persistence)
 Include screenshots here if available
 
 📦 Submission Details
-GitHub Repo: https://github.com/AayushiAtrish/personal-task-tracker
+GitHub Repo: https://github.com/AayushiAtrish/personal-task-tracker.git
 
-Live Demo: https://your-deployed-link.vercel.app
+Live Demo: [https://your-deployed-link.vercel.app](https://personal-task-tracker1.netlify.app/)
 
 🙋‍♀️ Author
 Aayushi Atrish
