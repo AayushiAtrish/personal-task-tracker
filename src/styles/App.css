@@ -1,0 +1,273 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s ease;
+  background-color: #f5f5f5;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Dark Theme */
+.dark {
+  background-color: #121212;
+  color: #eee;
+}
+
+/* Login Container */
+.login-container {
+  background-image: url('../../public/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  color: #f1f1f1;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-card h2 {
+  margin-bottom: 1.5rem;
+  color: #03fc77;
+}
+
+.login-card img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.error-text {
+  color: yellow;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Form Elements */
+input,
+select,
+button {
+  width: 100%;
+  margin: 0.75rem 0;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input,
+select {
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #6a0101;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #f857a6;
+  transform: translateY(-2px);
+}
+
+/* Dashboard Container */
+.app-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+/* Task List */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+/* Task Item */
+.task-item {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow-wrap: anywhere;
+}
+
+.task-item:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.task-item.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.task-item.overdue {
+  border-left: 4px solid #ff4d4d;
+  box-shadow: 0 2px 6px rgba(255, 0, 0, 0.15);
+}
+
+/* Task Content Header */
+.task-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  flex: 1;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  color: #f857a6;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.3s ease;
+  padding: 0;
+  margin-left: 0.75rem;
+}
+
+.delete-btn:hover {
+  color: darkred;
+  transform: scale(1.2);
+}
+
+/* Task Content Body */
+.task-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding-left: 1.5rem;
+}
+
+.task-meta,
+.task-date,
+.task-priority,
+.task-category {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Filters and Sorting */
+.filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.filter-tabs button {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 6px;
+  background: #eee;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.filter-tabs button:hover {
+  background: #ddd;
+}
+
+.filter-tabs button.active {
+  background: #f857a6;
+  color: white;
+  border: none;
+}
+
+.priority-sort {
+  margin-top: 1rem;
+}
+
+.priority-sort label {
+  margin-right: 0.5rem;
+}
+
+/* Top-right Controls */
+.top-right-controls {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+  gap: 0.5rem;
+}
+
+.theme-toggle,
+.logout-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Dark Mode Enhancements */
+.dark .task-item {
+  background: #1e1e1e;
+  color: #eee;
+}
+
+.dark .task-meta,
+.dark .task-date,
+.dark .task-priority,
+.dark .task-category {
+  color: #bbb;
+}
+
+.dark .filter-tabs button {
+  background: #333;
+  color: #eee;
+  border-color: #444;
+}
+
+.dark .filter-tabs button.active {
+  background: #f857a6;
+  color: white;
+}
+
+.dark input,
+.dark select {
+  background-color: #222;
+  color: #eee;
+  border: 1px solid #444;
+}
+
+.dark button {
+  background-color: #6a0101;
+  color: white;
+}
